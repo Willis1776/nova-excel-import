@@ -4,38 +4,38 @@ namespace Sparclex\NovaImportCard;
 
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithValidation;
 
-class BasicImporter implements ToModel, WithValidation, WithHeadingRow
+class BasicImporter implements ToModel, WithValidation
 {
-    use Importable;
+  use Importable;
 
-    protected $attributes;
+  protected $attributes;
 
-    protected $rules;
+  protected $rules;
 
-    protected $modelClass;
+  protected $modelClass;
 
-    public function __construct($resource, $attributes, $rules, $modelClass)
-    {
-        $this->resource = $resource;
-        $this->attributes = $attributes;
-        $this->rules = $rules;
-        $this->modelClass = $modelClass;
-    }
+  public function __construct($resource, $attributes, $rules, $modelClass)
+  {
+    $this->resource = $resource;
+    $this->attributes = $attributes;
+    $this->rules = $rules;
+    $this->modelClass = $modelClass;
+  }
 
-    public function model(array $row)
-    {
-        [$model, $callbacks] = $this->resource::fill(
-            new ImportNovaRequest($row), $this->resource::newModel()
-        );
+  public function model(array $row)
+  {
+    [$model, $callbacks] = $this->resource::fill(
+      new ImportNovaRequest($row),
+      $this->resource::newModel()
+    );
 
-        return $model;
-    }
+    return $model;
+  }
 
-    public function rules(): array
-    {
-        return $this->rules;
-    }
+  public function rules(): array
+  {
+    return $this->rules;
+  }
 }
