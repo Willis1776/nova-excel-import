@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'importer' => Sparclex\NovaImportCard\BasicImporter::class,
+    'importer' => Willis1776\NovaExcelImport\BasicImporter::class,
 ];

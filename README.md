@@ -1,13 +1,5 @@
 # A card which lets you batch import resources
 
-[![Latest Stable Version](https://poser.pugx.org/sparclex/nova-import-card/v/stable)](https://packagist.org/packages/sparclex/nova-import-card)
-[![Total Downloads](https://poser.pugx.org/sparclex/nova-import-card/downloads)](https://packagist.org/packages/sparclex/nova-import-card)
-[![Latest Unstable Version](https://poser.pugx.org/sparclex/nova-import-card/v/unstable)](https://packagist.org/packages/sparclex/nova-import-card)
-[![License](https://poser.pugx.org/sparclex/nova-import-card/license)](https://packagist.org/packages/sparclex/nova-import-card)
-[![StyleCI](https://github.styleci.io/repos/149668592/shield?branch=master)](https://github.styleci.io/repos/149668592)
-[![TravisCi](https://travis-ci.org/Sparclex/nova-import-card.svg?branch=master)](https://travis-ci.org/Sparclex/nova-import-card)
-[![codecov](https://codecov.io/gh/Sparclex/nova-import-card/branch/master/graph/badge.svg)](https://codecov.io/gh/Sparclex/nova-import-card)
-
 
 A customizable import card for laravel nova. This package is more or less just a UI for [laravel-excel](https://laravel-excel.maatwebsite.nl) import. It is however **not** an official package from Maatwebsite.
 

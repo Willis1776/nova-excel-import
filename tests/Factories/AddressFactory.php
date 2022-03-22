@@ -1,8 +1,8 @@
 <?php
 
 use Faker\Generator as Faker;
-use Sparclex\NovaImportCard\Tests\Fixtures\User;
-use Sparclex\NovaImportCard\Tests\Fixtures\Address;
+use Willis1776\NovaExcelImport\Tests\Fixtures\User;
+use Willis1776\NovaExcelImport\Tests\Fixtures\Address;
 
 $factory->define(Address::class, function (Faker $faker) {
     return [

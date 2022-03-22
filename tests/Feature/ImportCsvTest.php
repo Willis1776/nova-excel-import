@@ -1,12 +1,12 @@
 <?php
 
-namespace Sparclex\NovaImportCard\Tests\Feature;
+namespace Willis1776\NovaExcelImport\Tests\Feature;
 
 use Illuminate\Http\Testing\File;
 use Illuminate\Support\Facades\Storage;
-use Sparclex\NovaImportCard\Tests\Fixtures\User;
+use Willis1776\NovaExcelImport\Tests\Fixtures\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Sparclex\NovaImportCard\Tests\IntegrationTest;
+use Willis1776\NovaExcelImport\Tests\IntegrationTest;
 
 class ImportCsvTest extends IntegrationTest
 {
@@ -26,7 +26,7 @@ class ImportCsvTest extends IntegrationTest
         $this
             ->json(
                 'post',
-                'nova-vendor/sparclex/nova-import-card/endpoint/users',
+                'nova-vendor/willis1776/nova-excel-import/endpoint/users',
                 [
                     'file' => $this->createTmpFile(__DIR__.'/../stubs/users.csv'),
                 ]
@@ -61,7 +61,7 @@ class ImportCsvTest extends IntegrationTest
         $this
             ->json(
                 'post',
-                'nova-vendor/sparclex/nova-import-card/endpoint/users',
+                'nova-vendor/willis1776/nova-excel-import/endpoint/users',
                 [
                     'file' => $this->createTmpFile(__DIR__.'/../stubs/users-with-null-value.csv'),
                 ]
@@ -79,7 +79,7 @@ class ImportCsvTest extends IntegrationTest
         $this
             ->json(
                 'post',
-                'nova-vendor/sparclex/nova-import-card/endpoint/users',
+                'nova-vendor/willis1776/nova-excel-import/endpoint/users',
                 [
                     'file' => $this->createTmpFile(__DIR__.'/../stubs/unknown.zip', 'zip'),
                 ]
@@ -98,7 +98,7 @@ class ImportCsvTest extends IntegrationTest
         $this
             ->json(
                 'post',
-                'nova-vendor/sparclex/nova-import-card/endpoint/addresses',
+                'nova-vendor/willis1776/nova-excel-import/endpoint/addresses',
                 [
                     'file' => $this->createTmpFile(__DIR__.'/../stubs/addresses.csv'),
                 ]
@@ -125,7 +125,7 @@ class ImportCsvTest extends IntegrationTest
         $this
             ->json(
                 'post',
-                'nova-vendor/sparclex/nova-import-card/endpoint/addresses',
+                'nova-vendor/willis1776/nova-excel-import/endpoint/addresses',
                 [
                     'file' => $this->createTmpFile(__DIR__.'/../stubs/addresses-nullable.csv'),
                 ]

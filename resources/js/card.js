@@ -1,3 +1,3 @@
 Nova.booting(Vue => {
-    Vue.component('nova-import-card', require('./components/Card'));
+    Vue.component('nova-excel-import', require('./components/Card'));
 });

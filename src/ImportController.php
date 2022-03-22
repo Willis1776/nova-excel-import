@@ -1,6 +1,6 @@
 <?php
 
-namespace Sparclex\NovaImportCard;
+namespace Willis1776\NovaExcelImport;
 
 use Laravel\Nova\Actions\Action;
 use Laravel\Nova\Rules\Relatable;
@@ -14,7 +14,7 @@ class ImportController
     public function handle(NovaRequest $request)
     {
         $resource = $request->newResource();
-        $importerClass = $resource::$importer ?? config('nova-import-card.importer');
+        $importerClass = $resource::$importer ?? config('nova-excel-import.importer');
 
         $data = Validator::make($request->all(), [
             'file' => 'required|file',

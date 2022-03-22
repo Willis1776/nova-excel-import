@@ -1,6 +1,6 @@
 <?php
 
-namespace Sparclex\NovaImportCard\Tests\Fixtures;
+namespace Willis1776\NovaExcelImport\Tests\Fixtures;
 
 use Laravel\Nova\Resource;
 use Laravel\Nova\Fields\ID;

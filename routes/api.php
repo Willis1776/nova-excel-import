@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 //     //
 // });
 
-Route::post('/endpoint/{resource}', \Sparclex\NovaImportCard\ImportController::class.'@handle');
+Route::post('/endpoint/{resource}', \Willis1776\NovaExcelImport\ImportController::class.'@handle');

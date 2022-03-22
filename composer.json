@@ -1,5 +1,5 @@
 {
-    "name": "sparclex/nova-import-card",
+    "name": "willis1776/nova-excel-import",
     "description": "A card which lets you batch import resources",
     "keywords": [
         "laravel",
@@ -20,18 +20,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Sparclex\\NovaImportCard\\": "src/"
+            "Willis1776\\NovaExcelImport\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sparclex\\NovaImportCard\\Tests\\": "tests/"
+            "Willis1776\\NovaExcelImport\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Sparclex\\NovaImportCard\\CardServiceProvider"
+                "Willis1776\\NovaExcelImport\\CardServiceProvider"
             ]
         }
     },

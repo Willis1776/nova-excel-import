@@ -1,6 +1,6 @@
 <?php
 
-namespace Sparclex\NovaImportCard\Tests;
+namespace Willis1776\NovaExcelImport\Tests;
 
 use Mockery;
 use Laravel\Nova\Nova;
@@ -9,10 +9,10 @@ use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\ExcelServiceProvider;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Sparclex\NovaImportCard\CardServiceProvider;
-use Sparclex\NovaImportCard\Tests\Fixtures\User;
-use Sparclex\NovaImportCard\Tests\Fixtures\UserResource;
-use Sparclex\NovaImportCard\Tests\Fixtures\AddressResource;
+use Willis1776\NovaExcelImport\CardServiceProvider;
+use Willis1776\NovaExcelImport\Tests\Fixtures\User;
+use Willis1776\NovaExcelImport\Tests\Fixtures\UserResource;
+use Willis1776\NovaExcelImport\Tests\Fixtures\AddressResource;
 
 abstract class IntegrationTest extends Orchestra
 {

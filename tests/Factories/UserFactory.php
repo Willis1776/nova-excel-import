@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use Sparclex\NovaImportCard\Tests\Fixtures\User;
+use Willis1776\NovaExcelImport\Tests\Fixtures\User;
 
 $factory->define(User::class, function (Faker $faker) {
     return [

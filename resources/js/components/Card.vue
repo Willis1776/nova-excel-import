@@ -75,7 +75,7 @@ export default {
             formData.append('file', this.file);
             Nova.request()
                 .post(
-                    '/nova-vendor/sparclex/nova-import-card/endpoint/' + this.card.resource,
+                    '/nova-vendor/willis1776/nova-excel-import/endpoint/' + this.card.resource,
                     formData
                 )
                 .then(({ data }) => {

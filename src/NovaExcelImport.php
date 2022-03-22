@@ -1,6 +1,6 @@
 <?php
 
-namespace Sparclex\NovaImportCard;
+namespace Willis1776\NovaExcelImport;
 
 use Laravel\Nova\Card;
 use Laravel\Nova\Fields\File;
@@ -33,6 +33,6 @@ class NovaImportCard extends Card
      */
     public function component()
     {
-        return 'nova-import-card';
+        return 'nova-excel-import';
     }
 }

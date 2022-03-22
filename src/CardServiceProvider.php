@@ -1,6 +1,6 @@
 <?php
 
-namespace Sparclex\NovaImportCard;
+namespace Willis1776\NovaExcelImport;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
@@ -21,12 +21,12 @@ class CardServiceProvider extends ServiceProvider
         });
 
         $this->publishes([
-            __DIR__.'/config.php' => config_path('nova-import-card.php'),
+            __DIR__.'/config.php' => config_path('nova-excel-import.php'),
         ]);
 
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-import-card', __DIR__.'/../dist/js/card.js');
-            Nova::style('nova-import-card', __DIR__.'/../dist/css/card.css');
+            Nova::script('nova-excel-import', __DIR__.'/../dist/js/card.js');
+            Nova::style('nova-excel-import', __DIR__.'/../dist/css/card.css');
         });
     }
 
@@ -42,7 +42,7 @@ class CardServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova'])
-                ->prefix('nova-vendor/sparclex/nova-import-card')
+                ->prefix('nova-vendor/willis1776/nova-excel-import')
                 ->group(__DIR__.'/../routes/api.php');
     }
 
@@ -54,7 +54,7 @@ class CardServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config.php', 'nova-import-card'
+            __DIR__.'/config.php', 'nova-excel-import'
         );
     }
 }

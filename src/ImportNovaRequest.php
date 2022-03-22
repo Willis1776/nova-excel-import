@@ -1,6 +1,6 @@
 <?php
 
-namespace Sparclex\NovaImportCard;
+namespace Willis1776\NovaExcelImport;
 
 use Laravel\Nova\Http\Requests\NovaRequest;
 

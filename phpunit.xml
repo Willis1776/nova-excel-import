@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Sparclex Test Suite">
+        <testsuite name="Willis1776 Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
