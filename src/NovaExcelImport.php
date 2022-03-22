@@ -5,7 +5,7 @@ namespace Willis1776\NovaExcelImport;
 use Laravel\Nova\Card;
 use Laravel\Nova\Fields\File;
 
-class NovaImportCard extends Card
+class NovaExcelImport extends Card
 {
     /**
      * The width of the card (1/3, 1/2, or full).
