@@ -14,7 +14,7 @@
                             @change="fileChange"
                         />
                         <label :for="inputName" class="form-file-btn btn btn-default btn-primary">
-                            {{__('Choose File')}}
+                            {{__('Choose File')}} - Test
                         </label>
                     </span>
                     <span class="text-gray-50">
