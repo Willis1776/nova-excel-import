@@ -18,7 +18,7 @@
                         </label>
                     </span>
                     <span class="text-gray-50">
-                        {{ currentLabel }}
+                        {{ currentLabel }} - Test
                     </span>
 
                 </div>
@@ -33,7 +33,7 @@
                         class="btn btn-default btn-primary ml-auto mt-auto"
                     >
                         <loader v-if="working" width="30"></loader>
-                        <span v-else>{{__('Import')}}</span>
+                        <span v-else>{{__('Import')}} - Test</span>
                     </button>
                 </div>
             </form>
