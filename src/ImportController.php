@@ -18,6 +18,7 @@ class ImportController
 
         $data = Validator::make($request->all(), [
             'file' => 'required|file',
+            'date' => 'required'
         ])->validate();
 
         $importer = new $importerClass(
@@ -26,6 +27,8 @@ class ImportController
             $this->extractValidationRules($request, $resource)->toArray(),
             get_class($resource->resource)
         );
+
+        $importer->setDate($data['date']);
 
         try {
             $importer->import($data['file']);
